@@ -1,6 +1,6 @@
 var apiBase = 'https://app.koofr.net';
 var clientId = 'NGH3EJSMNB7IXFILTWYPJRV5W2A4ULHL';
-var redirectUri = 'https://koofr.github.io/javascript-example/koofrcallback.html';
+var redirectUri = window.location.origin + '/javascript-example/koofrcallback.html';
 var scope = 'public';
 
 var uploadPath = '/';
