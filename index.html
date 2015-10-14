@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Koofr upload example</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    .fileinput-button {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+    .fileinput-button input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      opacity: 0;
+      -ms-filter: 'alpha(opacity=0)';
+      font-size: 200px;
+      direction: ltr;
+      cursor: pointer;
+    }
+
+    body > .container {
+      margin-top: 30px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Koofr upload example</h1>
+
+    <div id="login">
+      <p><a href="#" class="btn btn-primary" id="login-button">Sign in with Koofr</a></p>
+    </div>
+
+    <div id="upload" style="display: none;">
+      <span class="btn btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Upload file...</span>
+
+        <input id="fileupload" type="file" name="file">
+      </span>
+
+      <br>
+      <br>
+
+      <div id="progress" class="progress">
+        <div class="progress-bar progress-bar-success"></div>
+      </div>
+
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.5.7/jquery.fileupload.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>

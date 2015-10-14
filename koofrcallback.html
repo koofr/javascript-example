@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <script>
+    var match = (window.location.hash) ? window.location.hash.match(/#access_token=([^&]+)/) : false;
+
+    if (match[1]) {
+        var parentWindow = (window.opener && window.opener.parent) ? window.opener.parent : window
+        
+        parentWindow.koofrOauthCallback(match[1]);
+    }
+
+    window.close();
+  </script>
+</body>
+</html>
